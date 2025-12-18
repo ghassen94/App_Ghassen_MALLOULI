@@ -5,13 +5,17 @@ import LinearGradient from 'react-native-linear-gradient';
 export const COLOR_YELLOW = '#FFFF53';
 export const COLOR_YELLOW_1 = '#BDDD06';
 export const COLOR_YELLOW_2 = '#B8FF35';
+export const COLOR_YELLOW_3 = '#FFEB3B';
 export const COLOR_GREEN = '#96DD10';
 const COLOR_WHITE  = '#FFF';
 export const COLOR_BLACK  = '#000';
+export const COLOR_LIGHT_GREY = '#e0e0e0ff';
 const COLOR_DARK_GREY = '#212121';
 export const COLOR_DARK_GREY_1 = '#242424';
 export const COLOR_BLUE = '#44DBE5';
 export const COLOR_BLUE_1 = '#0CF0FF';
+export const COLOR_BLUE_2 = '#00e0ff';
+export const COLOR_BLUE_3 = '#4000FF';
 
 
 const LIGT = '300';
@@ -229,6 +233,31 @@ const styles = StyleSheet.create({
     importantText: {
         textDecorationLine: 'underline',
         fontWeight: BOLD
+    },
+
+    // Loading screen
+    loadingScreenContainer: {
+        flex: 1,
+        backgroundColor: COLOR_YELLOW_3,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    percentageIndicator: {
+        fontSize: 20,
+        fontWeight: BOLD,
+        lineHeight: 21
+    },
+
+    percentageText: {
+        fontSize: 16,
+        fontWeight: BOLD,
+        lineHeight: 21,
+        marginTop: 30,
+    },
+
+    pourcentageBlueText: {
+        color: COLOR_BLUE_3,
     }
 });
 

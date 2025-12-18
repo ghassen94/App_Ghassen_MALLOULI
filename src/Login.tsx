@@ -3,13 +3,9 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { RadioButton } from 'react-native-paper';
 import styles, { COLOR_BLACK, COLOR_BLUE, COLOR_BLUE_1, COLOR_DARK_GREY_1, COLOR_GREEN, COLOR_YELLOW, COLOR_YELLOW_1, COLOR_YELLOW_2 } from '../assets/styles';
 import { useRef, useState } from 'react';
-import LinearGradient from 'react-native-linear-gradient';
-import GradientText from './GradientText';
 import AnimatedBtn from './AnimatedBtn';
 
-
 const Login = ({ navigation }: any) => {
-    // const { id, title } = route.params;
     const [connectionMode, setConnectionMode] = useState('emailAddress');
     const [emailAddress, setEmailAddress] = useState('');
     const [phone, setPhone] = useState('');
@@ -19,7 +15,6 @@ const Login = ({ navigation }: any) => {
     const translate = () => {
         // translate
     }
-
 
     const onPressIn = (val: number) => {
         Animated.timing(fadeAnim, { toValue: 1, duration: 100, useNativeDriver: false, }).start();
@@ -62,7 +57,8 @@ const Login = ({ navigation }: any) => {
     }
 
     const loginActionWithFacebook = () => {
-        navigation.replace('Home');
+        navigation.replace('LoadingScreen');
+        // navigation.replace('Home');
     }
 
     const loginActionWithGoogle = () => {
