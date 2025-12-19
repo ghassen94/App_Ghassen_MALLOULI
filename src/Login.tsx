@@ -14,7 +14,7 @@ const Login = ({ navigation }: any) => {
 
     useEffect(() => {
         if (pendingEmail) {
-            navigation.replace('Home');
+            navigation.replace('LoadingScreen');
         }
     }, [pendingEmail, navigation]);
 
@@ -142,11 +142,11 @@ const Login = ({ navigation }: any) => {
 
         try {
             await auth().signInWithEmailLink(emailAddress, link.trim());
-            // navigation.replace('Home');
+            // navigation.replace('LoadingScreen');
         } catch (error: any) {
             Alert.alert('Erreur', error.message || "Erreur lors de l'envoi du lien de connexion.");
         }
-        navigation.replace('Home');
+        navigation.replace('LoadingScreen');
     }
 
     const loginActionWithFacebook = () => {

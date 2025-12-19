@@ -23,7 +23,7 @@ function App() {
   return (
     <Provider store={store}>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
+        <Stack.Navigator initialRouteName="SplashScreen" screenOptions={{ headerShown: false }}>
           <Stack.Screen name="SplashScreen" component={SplashScreen} />
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Home" component={Home} />
