@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Animated, Image } from 'react-native';
+import { Animated } from 'react-native';
 import styles from '../assets/styles';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 

@@ -6,16 +6,24 @@ export const COLOR_YELLOW = '#FFFF53';
 export const COLOR_YELLOW_1 = '#BDDD06';
 export const COLOR_YELLOW_2 = '#B8FF35';
 export const COLOR_YELLOW_3 = '#FFEB3B';
+
 export const COLOR_GREEN = '#96DD10';
-const COLOR_WHITE  = '#FFF';
-export const COLOR_BLACK  = '#000';
+
+export const COLOR_YELLOW_4 = '#FFC117';
+export const COLOR_BLACK = '#000';
+export const COLOR_WHITE  = '#FFF';
+
 export const COLOR_LIGHT_GREY = '#e0e0e0ff';
-const COLOR_DARK_GREY = '#212121';
+export const COLOR_DARK_GREY = '#212121';
 export const COLOR_DARK_GREY_1 = '#242424';
+export const COLOR_DARK_2 = '#141414';
+export const COLOR_DARK_3 = '#0A0A0A';
+
 export const COLOR_BLUE = '#44DBE5';
 export const COLOR_BLUE_1 = '#0CF0FF';
 export const COLOR_BLUE_2 = '#00e0ff';
 export const COLOR_BLUE_3 = '#4000FF';
+export const COLOR_BLUE_4 = '#002A66';
 
 
 const LIGT = '300';
@@ -119,7 +127,8 @@ const styles = StyleSheet.create({
         color: COLOR_WHITE,
         opacity: 0.5,
         fontSize: 16,
-        fontWeight: MEDIUM
+        fontWeight: MEDIUM,
+        marginBottom: 10
     },
 
     loginBtnContainer: {
@@ -258,7 +267,110 @@ const styles = StyleSheet.create({
 
     pourcentageBlueText: {
         color: COLOR_BLUE_3,
-    }
+    },
+
+    // Home screen
+    homeScreenLikeIconContainer: {
+        backgroundColor: 'rgba(0, 0, 0, 0.1)',
+        width: 44,
+        height: 44,
+        padding: 10,
+        position: 'absolute',
+        top: 16,
+        right: 16,
+        borderRadius:'50%'
+        
+    },
+
+    homeScreenSignOutIconContainer: {
+        backgroundColor: 'rgba(0, 0, 0, 0.1)',
+        width: 44,
+        height: 44,
+        padding: 10,
+        position: 'absolute',
+        top: 16,
+        right: 66,
+        borderRadius:'50%'
+        
+    },
+    
+    homeScreenTopIcon: {
+        width: 24,
+        height: 24,
+        zIndex: 9999
+    },
+
+    homeScreenGradientBgStyle: {
+        height: '100%',
+    },
+    
+    homeScreenFlag: {
+        width: 97,
+        height: 97,
+        marginHorizontal: 'auto',
+        marginTop: 101
+    },
+
+    homeHeaderImageBackground: {
+        width: '100%',
+        height: 373,
+        position: 'absolute',
+        zIndex:-1,
+    },
+
+    homePageTitle: {
+        fontSize: 40,
+        fontWeight: BOLD,
+        color: COLOR_WHITE,
+        textAlign: 'center',
+        marginHorizontal: 50
+    },
+
+    contentCardContainer: {
+        zIndex: 9999,
+        padding: 16,
+        backgroundColor: 'rgba(255, 255, 255, 0.05)',
+        borderRadius: 20,
+        marginTop: 41,
+    },
+
+    contentTitle: {
+        marginBottom: 8,
+        color: COLOR_YELLOW_4,
+        fontSize: 20,
+        fontWeight: BOLD
+    },
+    
+    contentLikeContainer: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'flex-end',
+        marginBottom: 8,
+    },
+
+    contentLikeIcon: {
+        width: 16,
+        height: 16,
+        marginRight:2
+    },
+    
+    contentLikeText: {
+        margin: 0,
+        fontSize: 12,
+        fontWeight: NORMAL,
+        color: COLOR_WHITE,
+    },
+    
+    contentDescription: {
+        fontSize: 12,
+        fontWeight: NORMAL,
+        lineHeight:20,
+        color: COLOR_WHITE,
+        
+    },
+
+    
+    
 });
 
 

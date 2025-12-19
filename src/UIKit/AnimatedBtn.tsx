@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, Text, TextProps, TouchableOpacity } from 'react-native';
 import MaskedView from '@react-native-masked-view/masked-view';
 import LinearGradient from 'react-native-linear-gradient';
-import { COLOR_BLUE, COLOR_YELLOW } from '../assets/styles';
+import { COLOR_BLUE, COLOR_YELLOW } from '../../assets/styles';
 import GradientText from './GradientText';
 
 interface AnimatedBtnProps extends TextProps {

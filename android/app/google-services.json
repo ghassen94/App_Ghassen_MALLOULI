@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "945851592928",
+    "project_id": "for1-f695e",
+    "storage_bucket": "for1-f695e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945851592928:android:2dd71463f519c14f45e085",
+        "android_client_info": {
+          "package_name": "com.app_ghassen_mallouli"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxMjQQbGOggpxk-g6b9A_9qGQ8tgfjW_c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
